@@ -15,7 +15,7 @@ getId('cart-container').addEventListener("click",function(e){
         const serviceName = e.target.parentNode.parentNode.childNodes[3].childNodes[1].innerText;
         // console.log(serviceName)
         const serviceNumber = e.target.parentNode.parentNode.childNodes[3].childNodes[5].innerText;
-        const serviceIcon = e.target.childNodes[1];
+        // const serviceIcon = e.target.childNodes[1];
         const parent = document.getElementById("history-container");
         const newCart = document.createElement("div");
         let currentDate = new Date().toLocaleTimeString("en-US");
@@ -37,6 +37,14 @@ getId('cart-container').addEventListener("click",function(e){
     }
     else if(Number(getId("coin").innerText) < 20){
         alert("❌ আপনার পর্যাপ্ত কয়েন নেই কল করতে ২০ কয়েন লাগবে")
+    }
+    else if(e.target.className.includes("copy")){
+        const serviceNumber = e.target.parentNode.parentNode.childNodes[3].childNodes[5].innerText;
+        navigator.clipboard.writeText(serviceNumber);
+        alert("Number Successfully Copied. You can paste anywhere");
+
+        const totalcopied = Number(getId("copied").innerText) + 1;
+        getId("copied").innerText = totalcopied;
     }
 })
 getId("clear").addEventListener("click",function(){
