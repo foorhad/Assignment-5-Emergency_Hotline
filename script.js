@@ -20,9 +20,9 @@ getId('cart-container').addEventListener("click",function(e){
         const newCart = document.createElement("div");
         let currentDate = new Date().toLocaleTimeString("en-US");
         newCart.innerHTML=`
-        <div class="mb:20 flex justify-between items-center gap:4 bg:FAFAFA shadow rounded-md p-3"">
+        <div class="flex gap:4 w-45 mb:20 flex justify-between items-center gap:4 bg:FAFAFA shadow rounded-md p-3"">
           <div>
-            <h1>${serviceName}</h1>
+            <h1 class="text-[#10px]">${serviceName}</h1>
             <h1 class="text[#5C5C5C]">${serviceNumber}</h1>
           </div>
           <h1>${currentDate}</h1>
