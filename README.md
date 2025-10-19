@@ -6,4 +6,16 @@
            querySelector return first mathched html element
            querySelectorAll return the nodeList. if you can access the elements. you must loop through. <br>
   </li>
+  <li>
+    How do you create and insert a new element into the DOM?
+    Answer : <br>
+    step1 : get the parent using getElementById<br>
+    step2 : create new div using createElement() and keep it new variable<br>
+    step3 : write code in new variable using innerHtml
+    step4 : push new div in parent 
+  </li>
+  <li>
+    What is Event Bubbling and how does it work?<br>
+    Answer: Event Bubbling work bottom to up
+  </li>
 </ol>
