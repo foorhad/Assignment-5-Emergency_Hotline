@@ -18,5 +18,12 @@
     What is Event Bubbling and how does it work?<br>
     Answer: Event Bubbling work bottom to up
   </li>
-  <li>dkf</li>
+  <li>What is Event Delegation in JavaScript? Why is it useful?<br>
+  Answer : Event Delegation is the most powerfull and high efficeincy technique in Javascript. instead of adding to Event Listener to each child element. you add once EventListener in parent element. 
+  </li>
+  <li>
+    What is the difference between preventDefault() and stopPropagation() methods?<br>
+    Answer : preventDefault() : Stop browser default behaviur <br>
+    stopPropagation() : Stop Event bubbling
+  </li>
 </ol>
